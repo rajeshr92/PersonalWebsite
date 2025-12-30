@@ -48,7 +48,6 @@ nav a:hover::after {
   width: 100%;
 }
 
-/* Keep zoom only for non-flip project cards */
 .project-card:hover .project-overlay {
   opacity: 1;
 }
@@ -57,40 +56,35 @@ nav a:hover::after {
   transform: scale(1.05);
 }
 
-/* Flip Card */
+/* Flip Card - reveal back on hover */
 .flip-card {
-  perspective: 1000px;
-  cursor: pointer;
-}
-
-.flip-card-inner {
   position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.7s ease;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  border-radius: 2px;
   overflow: hidden;
 }
 
-.flip-card-back {
-  transform: rotateY(180deg);
+.flip-card .card-front {
+  transition: opacity 0.5s ease;
+}
+
+.flip-card .card-back {
+  position: absolute;
+  inset: 0;
   background: linear-gradient(135deg, #2d1b1e 0%, #221013 100%);
   border: 1px solid rgba(236, 19, 55, 0.3);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.flip-card:hover .card-front {
+  opacity: 0;
+}
+
+.flip-card:hover .card-back {
+  opacity: 1;
 }
 
 /* Custom scrollbar */

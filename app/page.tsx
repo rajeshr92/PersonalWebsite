@@ -156,84 +156,66 @@ export default function Home() {
               </div>
             </a>
 
-            {/* Project 2 (Tall) - Media/Gaming Experiences - FLIP CARD */}
-            <div className="flip-card col-span-1 aspect-[4/5] md:aspect-auto md:row-span-2">
-              <div className="flip-card-inner">
-                {/* Front */}
-                <div className="flip-card-front bg-neutral-900 border border-white/5">
-                  <Image
-                    src="/xbox-quest.webp"
-                    alt="Media/Gaming Experiences"
-                    fill
-                    className="object-cover opacity-90"
-                  />
-                  <div className="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
-                    <h3 className="text-2xl font-display font-bold">
-                      Media & Gaming
-                    </h3>
-                  </div>
+            {/* Project 2 (Tall) - Media/Gaming Experiences */}
+            <div className="flip-card relative col-span-1 aspect-[4/5] md:aspect-auto md:row-span-2 rounded-sm bg-neutral-900 border border-white/5 cursor-pointer">
+              {/* Front */}
+              <div className="card-front">
+                <Image
+                  src="/xbox-quest.webp"
+                  alt="Media/Gaming Experiences"
+                  fill
+                  className="object-cover opacity-90"
+                />
+                <div className="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
+                  <h3 className="text-2xl font-display font-bold">Media & Gaming</h3>
                 </div>
-                {/* Back */}
-                <div className="flip-card-back p-8 flex flex-col justify-center">
-                  <h3 className="text-2xl font-display font-bold mb-4 text-primary">Media & Gaming</h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    Details coming soon...
-                  </p>
-                </div>
+              </div>
+              {/* Back */}
+              <div className="card-back rounded-sm">
+                <h3 className="text-xl font-display font-bold mb-4 text-primary">Media & Gaming</h3>
+                <p className="text-gray-300 text-sm leading-relaxed">Details coming soon...</p>
               </div>
             </div>
 
-            {/* Project 3 - Horizon TV - FLIP CARD */}
-            <div className="flip-card col-span-1 aspect-square">
-              <div className="flip-card-inner">
-                {/* Front */}
-                <div className="flip-card-front bg-neutral-900 border border-white/5">
-                  <Image
-                    src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=1000&auto=format&fit=crop"
-                    alt="Horizon TV"
-                    fill
-                    className="object-cover opacity-90"
-                  />
-                  <div className="absolute bottom-0 left-0 w-full p-6 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
-                    <h3 className="text-xl font-display font-bold">
-                      Horizon TV
-                    </h3>
-                  </div>
+            {/* Project 3 - Horizon TV */}
+            <div className="flip-card relative col-span-1 aspect-square rounded-sm bg-neutral-900 border border-white/5 cursor-pointer">
+              {/* Front */}
+              <div className="card-front">
+                <Image
+                  src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=1000&auto=format&fit=crop"
+                  alt="Horizon TV"
+                  fill
+                  className="object-cover opacity-90"
+                />
+                <div className="absolute bottom-0 left-0 w-full p-6 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
+                  <h3 className="text-xl font-display font-bold">Horizon TV</h3>
                 </div>
-                {/* Back */}
-                <div className="flip-card-back p-6 flex flex-col justify-center">
-                  <h3 className="text-xl font-display font-bold mb-3 text-primary">Horizon TV</h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    Details coming soon...
-                  </p>
-                </div>
+              </div>
+              {/* Back */}
+              <div className="card-back rounded-sm">
+                <h3 className="text-lg font-display font-bold mb-3 text-primary">Horizon TV</h3>
+                <p className="text-gray-300 text-sm leading-relaxed">Details coming soon...</p>
               </div>
             </div>
 
-            {/* Project 4 - Together Mode Studio - FLIP CARD */}
-            <div className="flip-card col-span-1 aspect-square">
-              <div className="flip-card-inner">
-                {/* Front */}
-                <div className="flip-card-front bg-neutral-900 border border-white/5">
-                  <Image
-                    src="/together-mode.jpg"
-                    alt="Together Mode Studio"
-                    fill
-                    className="object-cover opacity-90"
-                  />
-                  <div className="absolute bottom-0 left-0 w-full p-6 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
-                    <h3 className="text-xl font-display font-bold">
-                      Together Mode Studio
-                    </h3>
-                  </div>
+            {/* Project 4 - Together Mode Studio */}
+            <div className="flip-card relative col-span-1 aspect-square rounded-sm bg-neutral-900 border border-white/5 cursor-pointer">
+              {/* Front */}
+              <div className="card-front">
+                <Image
+                  src="/together-mode.jpg"
+                  alt="Together Mode Studio"
+                  fill
+                  className="object-cover opacity-90"
+                />
+                <div className="absolute bottom-0 left-0 w-full p-6 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
+                  <h3 className="text-xl font-display font-bold">Together Mode Studio</h3>
                 </div>
-                {/* Back */}
-                <div className="flip-card-back p-6 flex flex-col justify-center">
-                  <h3 className="text-xl font-display font-bold mb-3 text-primary">Together Mode Studio</h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    Details coming soon...
-                  </p>
-                </div>
+              </div>
+              {/* Back */}
+              <div className="card-back rounded-sm">
+                <h3 className="text-lg font-display font-bold mb-3 text-primary">Together Mode Studio</h3>
+                <p className="text-gray-300 text-sm leading-relaxed">Details coming soon...</p>
               </div>
             </div>
           </div>
