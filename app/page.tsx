@@ -162,7 +162,7 @@ export default function Home() {
               className="group project-card relative col-span-1 aspect-[4/5] md:aspect-auto md:row-span-2 overflow-hidden rounded-sm bg-neutral-900 border border-white/5 hover:border-white/20 transition-colors"
             >
               <Image
-                src="/xbox-quest.jpg"
+                src="/xbox-quest.webp"
                 alt="Media/Gaming Experiences"
                 fill
                 className="object-cover transition-transform duration-700 ease-out opacity-80 group-hover:opacity-60"
