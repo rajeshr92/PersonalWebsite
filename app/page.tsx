@@ -156,23 +156,23 @@ export default function Home() {
               </div>
             </a>
 
-            {/* Project 2 (Tall) - Together Mode Studio */}
+            {/* Project 2 (Tall) - VCaaP */}
             <a
               href="#"
               className="group project-card relative col-span-1 aspect-[4/5] md:aspect-auto md:row-span-2 overflow-hidden rounded-sm bg-neutral-900 border border-white/5 hover:border-white/20 transition-colors"
             >
               <Image
-                src="https://images.unsplash.com/photo-1626379953822-baec19c3accd?q=80&w=1000&auto=format&fit=crop"
-                alt="Together Mode Studio"
+                src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop"
+                alt="VCaaP"
                 fill
                 className="object-cover transition-transform duration-700 ease-out opacity-80 group-hover:opacity-60"
               />
               <div className="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
                 <h3 className="text-2xl font-display font-bold mb-2 group-hover:scale-105 transition-transform origin-left duration-300">
-                  Together Mode Studio
+                  VCaaP
                 </h3>
                 <p className="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
-                  AR-like Shared Spaces • Microsoft Teams (0→1)
+                  Video Conferencing as a Platform • Microsoft Teams
                 </p>
               </div>
             </a>
@@ -198,23 +198,23 @@ export default function Home() {
               </div>
             </a>
 
-            {/* Project 4 - VCaaP */}
+            {/* Project 4 - Together Mode Studio */}
             <a
               href="#"
               className="group project-card relative col-span-1 aspect-square overflow-hidden rounded-sm bg-neutral-900 border border-white/5 hover:border-white/20 transition-colors"
             >
               <Image
-                src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop"
-                alt="VCaaP"
+                src="https://i.ytimg.com/vi/ZlJUTNd8LXc/maxresdefault.jpg"
+                alt="Together Mode Studio"
                 fill
                 className="object-cover transition-transform duration-700 ease-out opacity-80 group-hover:opacity-60"
               />
               <div className="absolute bottom-0 left-0 w-full p-6 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
                 <h3 className="text-xl font-display font-bold mb-1 group-hover:scale-105 transition-transform origin-left duration-300">
-                  VCaaP
+                  Together Mode Studio
                 </h3>
                 <p className="text-gray-300 text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
-                  Video Conferencing as a Platform • Microsoft Teams
+                  AR-like Shared Spaces • Microsoft Teams (0→1)
                 </p>
               </div>
             </a>
