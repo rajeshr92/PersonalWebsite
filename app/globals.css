@@ -28,11 +28,24 @@ body {
   color: #ffffff;
 }
 
-.glass-nav {
-  background: rgba(34, 16, 19, 0.8);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(236, 19, 55, 0.1);
+/* Navigation hover underline effect */
+nav a {
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #ec1337;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
 }
 
 .project-card:hover .project-overlay {

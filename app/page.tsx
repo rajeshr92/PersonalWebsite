@@ -3,40 +3,55 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <a
-            href="#"
-            className="text-xl font-display font-bold tracking-tighter hover:scale-105 transition-transform origin-left"
-          >
-            RR.
-          </a>
-
-          <div className="hidden md:flex items-center gap-8">
+      {/* Navigation - Clean tab style like meghanadhar.com */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background-dark/95 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+        <div className="max-w-6xl mx-auto px-6">
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center justify-center h-16 gap-12">
             <a
-              href="#work"
-              className="text-sm font-medium text-gray-300 hover:text-white hover:scale-110 transition-all"
+              href="#"
+              className="text-sm font-medium text-white hover:text-primary transition-colors tracking-wide"
             >
-              Work
+              Home
             </a>
             <a
               href="#about"
-              className="text-sm font-medium text-gray-300 hover:text-white hover:scale-110 transition-all"
+              className="text-sm font-medium text-gray-400 hover:text-white transition-colors tracking-wide"
             >
               About
             </a>
             <a
+              href="#"
+              className="text-xl font-display font-bold tracking-tighter text-white hover:text-primary transition-colors px-8"
+            >
+              Rajesh Rangarajan
+            </a>
+            <a
+              href="#work"
+              className="text-sm font-medium text-gray-400 hover:text-white transition-colors tracking-wide"
+            >
+              Work
+            </a>
+            <a
               href="#contact"
-              className="text-sm font-medium text-gray-300 hover:text-white hover:scale-110 transition-all"
+              className="text-sm font-medium text-gray-400 hover:text-white transition-colors tracking-wide"
             >
               Contact
             </a>
           </div>
 
-          <button className="md:hidden text-white hover:scale-110 transition-transform">
-            <span className="material-symbols-outlined">menu</span>
-          </button>
+          {/* Mobile Navigation */}
+          <div className="md:hidden flex items-center justify-between h-16">
+            <a
+              href="#"
+              className="text-lg font-display font-bold tracking-tighter text-white"
+            >
+              Rajesh Rangarajan
+            </a>
+            <button className="text-white hover:text-primary transition-colors p-2">
+              <span className="material-symbols-outlined">menu</span>
+            </button>
+          </div>
         </div>
       </nav>
 
