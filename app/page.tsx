@@ -156,95 +156,68 @@ export default function Home() {
               </div>
             </a>
 
-            {/* Project 2 (Tall) - Media/Gaming Experiences - FLIP CARD */}
-            <div className="flip-card col-span-1 aspect-[4/5] md:aspect-auto md:row-span-2 rounded-sm">
-              <div className="flip-card-inner">
-                {/* Front */}
-                <div className="flip-card-front rounded-sm overflow-hidden bg-neutral-900 border border-white/5">
-                  <Image
-                    src="/xbox-quest.webp"
-                    alt="Media/Gaming Experiences"
-                    fill
-                    className="object-cover opacity-80"
-                  />
-                  <div className="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
-                    <h3 className="text-2xl font-display font-bold mb-2">
-                      Media & Gaming
-                    </h3>
-                    <p className="text-gray-300 text-sm">
-                      Experiences & Discovery • Meta Quest
-                    </p>
-                  </div>
-                </div>
-                {/* Back */}
-                <div className="flip-card-back rounded-sm overflow-hidden bg-[#2d1b1e] border border-primary/20 p-8 flex flex-col justify-center">
-                  <h3 className="text-2xl font-display font-bold mb-4 text-primary">Media & Gaming</h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    Details coming soon...
-                  </p>
-                </div>
+            {/* Project 2 (Tall) - Media/Gaming Experiences */}
+            <a
+              href="#"
+              className="group project-card relative col-span-1 aspect-[4/5] md:aspect-auto md:row-span-2 overflow-hidden rounded-sm bg-neutral-900 border border-white/5 hover:border-white/20 transition-colors"
+            >
+              <Image
+                src="/xbox-quest.webp"
+                alt="Media/Gaming Experiences"
+                fill
+                className="object-cover transition-transform duration-700 ease-out opacity-80 group-hover:opacity-60"
+              />
+              <div className="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
+                <h3 className="text-2xl font-display font-bold mb-2 group-hover:scale-105 transition-transform origin-left duration-300">
+                  Media & Gaming
+                </h3>
+                <p className="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+                  Experiences & Discovery • Meta Quest
+                </p>
               </div>
-            </div>
+            </a>
 
-            {/* Project 3 - Horizon TV - FLIP CARD */}
-            <div className="flip-card col-span-1 aspect-square rounded-sm">
-              <div className="flip-card-inner">
-                {/* Front */}
-                <div className="flip-card-front rounded-sm overflow-hidden bg-neutral-900 border border-white/5">
-                  <Image
-                    src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=1000&auto=format&fit=crop"
-                    alt="Horizon TV"
-                    fill
-                    className="object-cover opacity-80"
-                  />
-                  <div className="absolute bottom-0 left-0 w-full p-6 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
-                    <h3 className="text-xl font-display font-bold mb-1">
-                      Horizon TV
-                    </h3>
-                    <p className="text-gray-300 text-xs">
-                      Entertainment Discovery Hub • Meta Quest
-                    </p>
-                  </div>
-                </div>
-                {/* Back */}
-                <div className="flip-card-back rounded-sm overflow-hidden bg-[#2d1b1e] border border-primary/20 p-6 flex flex-col justify-center">
-                  <h3 className="text-xl font-display font-bold mb-3 text-primary">Horizon TV</h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    Details coming soon...
-                  </p>
-                </div>
+            {/* Project 3 - Horizon TV */}
+            <a
+              href="#"
+              className="group project-card relative col-span-1 aspect-square overflow-hidden rounded-sm bg-neutral-900 border border-white/5 hover:border-white/20 transition-colors"
+            >
+              <Image
+                src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=1000&auto=format&fit=crop"
+                alt="Horizon TV"
+                fill
+                className="object-cover transition-transform duration-700 ease-out opacity-80 group-hover:opacity-60"
+              />
+              <div className="absolute bottom-0 left-0 w-full p-6 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
+                <h3 className="text-xl font-display font-bold mb-1 group-hover:scale-105 transition-transform origin-left duration-300">
+                  Horizon TV
+                </h3>
+                <p className="text-gray-300 text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+                  Entertainment Discovery Hub • Meta Quest
+                </p>
               </div>
-            </div>
+            </a>
 
-            {/* Project 4 - Together Mode Studio - FLIP CARD */}
-            <div className="flip-card col-span-1 aspect-square rounded-sm">
-              <div className="flip-card-inner">
-                {/* Front */}
-                <div className="flip-card-front rounded-sm overflow-hidden bg-neutral-900 border border-white/5">
-                  <Image
-                    src="/together-mode.jpg"
-                    alt="Together Mode Studio"
-                    fill
-                    className="object-cover opacity-80"
-                  />
-                  <div className="absolute bottom-0 left-0 w-full p-6 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
-                    <h3 className="text-xl font-display font-bold mb-1">
-                      Together Mode Studio
-                    </h3>
-                    <p className="text-gray-300 text-xs">
-                      AR-like Shared Spaces • Microsoft Teams (0→1)
-                    </p>
-                  </div>
-                </div>
-                {/* Back */}
-                <div className="flip-card-back rounded-sm overflow-hidden bg-[#2d1b1e] border border-primary/20 p-6 flex flex-col justify-center">
-                  <h3 className="text-xl font-display font-bold mb-3 text-primary">Together Mode Studio</h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    Details coming soon...
-                  </p>
-                </div>
+            {/* Project 4 - Together Mode Studio */}
+            <a
+              href="#"
+              className="group project-card relative col-span-1 aspect-square overflow-hidden rounded-sm bg-neutral-900 border border-white/5 hover:border-white/20 transition-colors"
+            >
+              <Image
+                src="/together-mode.jpg"
+                alt="Together Mode Studio"
+                fill
+                className="object-cover transition-transform duration-700 ease-out opacity-80 group-hover:opacity-60"
+              />
+              <div className="absolute bottom-0 left-0 w-full p-6 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
+                <h3 className="text-xl font-display font-bold mb-1 group-hover:scale-105 transition-transform origin-left duration-300">
+                  Together Mode Studio
+                </h3>
+                <p className="text-gray-300 text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+                  AR-like Shared Spaces • Microsoft Teams (0→1)
+                </p>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
