@@ -135,86 +135,86 @@ export default function Home() {
 
           {/* Bento Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-            {/* Project 1 (Large) */}
+            {/* Project 1 (Large) - Travel Mode / Flight Mode */}
             <a
               href="#"
               className="group project-card relative col-span-1 md:col-span-2 aspect-[16/9] overflow-hidden rounded-sm bg-neutral-900 border border-white/5 hover:border-white/20 transition-colors"
             >
               <Image
                 src="/travel-mode-cover.png"
-                alt="Project Cygnus"
+                alt="Travel Mode"
                 fill
                 className="object-cover transition-transform duration-700 ease-out opacity-80 group-hover:opacity-60"
               />
               <div className="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
                 <h3 className="text-2xl md:text-3xl font-display font-bold mb-2 group-hover:scale-105 transition-transform origin-left duration-300">
-                  Project Cygnus
+                  Travel Mode
                 </h3>
                 <p className="text-gray-300 text-sm md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
-                  AR Storytelling Experience • 2024
+                  Meta Quest on Lufthansa Airlines • APEX 2024 Award Winner
                 </p>
               </div>
             </a>
 
-            {/* Project 2 (Tall) */}
+            {/* Project 2 (Tall) - Together Mode Studio */}
             <a
               href="#"
               className="group project-card relative col-span-1 aspect-[4/5] md:aspect-auto md:row-span-2 overflow-hidden rounded-sm bg-neutral-900 border border-white/5 hover:border-white/20 transition-colors"
             >
               <Image
                 src="https://images.unsplash.com/photo-1626379953822-baec19c3accd?q=80&w=1000&auto=format&fit=crop"
-                alt="Aether"
+                alt="Together Mode Studio"
                 fill
                 className="object-cover transition-transform duration-700 ease-out opacity-80 group-hover:opacity-60"
               />
               <div className="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
                 <h3 className="text-2xl font-display font-bold mb-2 group-hover:scale-105 transition-transform origin-left duration-300">
-                  Aether
+                  Together Mode Studio
                 </h3>
                 <p className="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
-                  Spatial Conferencing Tool • Microsoft
+                  AR-like Shared Spaces • Microsoft Teams (0→1)
                 </p>
               </div>
             </a>
 
-            {/* Project 3 */}
+            {/* Project 3 - Horizon TV */}
             <a
               href="#"
               className="group project-card relative col-span-1 aspect-square overflow-hidden rounded-sm bg-neutral-900 border border-white/5 hover:border-white/20 transition-colors"
             >
               <Image
-                src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1000&auto=format&fit=crop"
-                alt="Live Sessions"
+                src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=1000&auto=format&fit=crop"
+                alt="Horizon TV"
                 fill
                 className="object-cover transition-transform duration-700 ease-out opacity-80 group-hover:opacity-60"
               />
               <div className="absolute bottom-0 left-0 w-full p-6 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
                 <h3 className="text-xl font-display font-bold mb-1 group-hover:scale-105 transition-transform origin-left duration-300">
-                  Live Sessions
+                  Horizon TV
                 </h3>
                 <p className="text-gray-300 text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
-                  Interactive Concert
+                  Entertainment Discovery Hub • Meta Quest
                 </p>
               </div>
             </a>
 
-            {/* Project 4 */}
+            {/* Project 4 - VCaaP */}
             <a
               href="#"
               className="group project-card relative col-span-1 aspect-square overflow-hidden rounded-sm bg-neutral-900 border border-white/5 hover:border-white/20 transition-colors"
             >
               <Image
-                src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop"
-                alt="The Archivist"
+                src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop"
+                alt="VCaaP"
                 fill
                 className="object-cover transition-transform duration-700 ease-out opacity-80 group-hover:opacity-60"
               />
               <div className="absolute bottom-0 left-0 w-full p-6 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
                 <h3 className="text-xl font-display font-bold mb-1 group-hover:scale-105 transition-transform origin-left duration-300">
-                  The Archivist
+                  VCaaP
                 </h3>
                 <p className="text-gray-300 text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
-                  Short Film
+                  Video Conferencing as a Platform • Microsoft Teams
                 </p>
               </div>
             </a>
