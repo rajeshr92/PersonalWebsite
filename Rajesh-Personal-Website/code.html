@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Rajesh Rangarajan | Media Experience Builder</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "background-dark": "#221013",
+            "background-light": "#f8f6f6",
+            "primary": "#ec1337",
+            "neutral-900": "#2d1b1e",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk", "sans-serif"],
+            "body": ["Inter", "sans-serif"],
+          },
+          backgroundImage: {
+            'hero-glow': 'conic-gradient(from 180deg at 50% 50%, #4a1a21 0deg, #221013 180deg, #4a1a21 360deg)',
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards',
+            'slide-up': 'slideUp 0.8s ease-out forwards',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            slideUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            }
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      background-color: #221013;
+      color: #ffffff;
+    }
+
+    .glass-nav {
+      background: rgba(34, 16, 19, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(236, 19, 55, 0.1);
+    }
+
+    .project-card:hover .project-overlay {
+      opacity: 1;
+    }
+
+    .project-card:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Hide scrollbar for clean look */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #221013;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #ec1337;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ff3355;
+    }
+  </style>
+</head>
+
+<body class="font-body antialiased selection:bg-primary selection:text-white">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#"
+        class="text-xl font-display font-bold tracking-tighter hover:scale-105 transition-transform origin-left">RR.</a>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#work"
+          class="text-sm font-medium text-gray-300 hover:text-white hover:scale-110 transition-all">Work</a>
+        <a href="#about"
+          class="text-sm font-medium text-gray-300 hover:text-white hover:scale-110 transition-all">About</a>
+        <a href="#contact"
+          class="text-sm font-medium text-gray-300 hover:text-white hover:scale-110 transition-all">Contact</a>
+      </div>
+
+      <button class="md:hidden text-white hover:scale-110 transition-transform">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <!-- Background Ambient Glow -->
+    <div class="absolute inset-0 bg-hero-glow opacity-40 pointer-events-none"></div>
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[128px] pointer-events-none"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[128px] pointer-events-none">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+
+      <!-- Text Content -->
+      <div class="order-2 lg:order-1 flex flex-col gap-6 animate-slide-up">
+        <h2 class="text-sm font-medium tracking-[0.2em] text-gray-400 uppercase">Spatial Computing Product Manager</h2>
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tighter leading-[0.9]">
+          Rajesh<br>Rangarajan
+        </h1>
+
+        <!-- Expertise Keywords -->
+        <div class="flex flex-wrap gap-3 py-2">
+          <span
+            class="px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-medium text-gray-300 tracking-wide">Spatial
+            Computing</span>
+          <span
+            class="px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-medium text-gray-300 tracking-wide">AR/VR</span>
+          <span
+            class="px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-medium text-gray-300 tracking-wide">Cinematography</span>
+          <span
+            class="px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-medium text-gray-300 tracking-wide">Interactive
+            Storytelling</span>
+        </div>
+
+        <p class="text-lg md:text-xl text-gray-400 max-w-md leading-relaxed">
+          Crafting immersive worlds at the intersection of cinematic storytelling and spatial computing.
+        </p>
+
+        <div class="pt-6 flex gap-6">
+          <a href="#work"
+            class="group flex items-center gap-2 text-white font-medium border-b border-white/20 pb-1 hover:border-white transition-colors">
+            View Selected Works
+            <span
+              class="material-symbols-outlined text-lg text-white transition-transform group-hover:translate-x-1">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Image -->
+      <div class="order-1 lg:order-2 relative animate-fade-in">
+        <div
+          class="relative aspect-[3/4] md:aspect-[4/5] lg:aspect-[3/4] w-full max-w-md mx-auto overflow-hidden rounded-sm transition-all duration-700 ease-out border border-white/5">
+          <img src="IMG_2168 2.jpeg" alt="Portrait of Rajesh Rangarajan"
+            class="object-cover object-top transition-transform duration-700 w-full h-full">
+          <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-60">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Work Section -->
+  <section id="work" class="py-32 relative">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+        <h2 class="text-4xl md:text-5xl font-display font-bold tracking-tight">Selected Works</h2>
+        <p class="text-gray-500 max-w-xs text-sm md:text-right">A collection of spatial experiences, AR/VR tools, and
+          interactive media.</p>
+      </div>
+
+      <!-- Bento Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+
+        <!-- Project 1 (Large) -->
+        <a href="#"
+          class="group project-card relative col-span-1 md:col-span-2 aspect-[16/9] overflow-hidden rounded-sm bg-neutral-900 border border-white/5 hover:border-white/20 transition-colors">
+          <img src="Travel Mode - Cover Image.png" alt="Project Cygnus"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out opacity-80 group-hover:opacity-60">
+          <div
+            class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
+            <h3
+              class="text-2xl md:text-3xl font-display font-bold mb-2 group-hover:scale-105 transition-transform origin-left duration-300">
+              Project Cygnus</h3>
+            <p
+              class="text-gray-300 text-sm md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+              AR Storytelling Experience • 2024</p>
+          </div>
+        </a>
+
+        <!-- Project 2 (Tall) -->
+        <a href="#"
+          class="group project-card relative col-span-1 aspect-[4/5] md:aspect-auto md:row-span-2 overflow-hidden rounded-sm bg-neutral-900 border border-white/5 hover:border-white/20 transition-colors">
+          <img src="https://images.unsplash.com/photo-1626379953822-baec19c3accd?q=80&w=1000&auto=format&fit=crop"
+            alt="Aether"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out opacity-80 group-hover:opacity-60">
+          <div
+            class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
+            <h3
+              class="text-2xl font-display font-bold mb-2 group-hover:scale-105 transition-transform origin-left duration-300">
+              Aether</h3>
+            <p
+              class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+              Spatial Conferencing Tool • Microsoft</p>
+          </div>
+        </a>
+
+        <!-- Project 3 -->
+        <a href="#"
+          class="group project-card relative col-span-1 aspect-square overflow-hidden rounded-sm bg-neutral-900 border border-white/5 hover:border-white/20 transition-colors">
+          <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1000&auto=format&fit=crop"
+            alt="Live Sessions"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out opacity-80 group-hover:opacity-60">
+          <div
+            class="absolute bottom-0 left-0 w-full p-6 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
+            <h3
+              class="text-xl font-display font-bold mb-1 group-hover:scale-105 transition-transform origin-left duration-300">
+              Live Sessions</h3>
+            <p
+              class="text-gray-300 text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+              Interactive Concert</p>
+          </div>
+        </a>
+
+        <!-- Project 4 -->
+        <a href="#"
+          class="group project-card relative col-span-1 aspect-square overflow-hidden rounded-sm bg-neutral-900 border border-white/5 hover:border-white/20 transition-colors">
+          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop"
+            alt="The Archivist"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out opacity-80 group-hover:opacity-60">
+          <div
+            class="absolute bottom-0 left-0 w-full p-6 flex flex-col justify-end bg-gradient-to-t from-background-dark/90 to-transparent">
+            <h3
+              class="text-xl font-display font-bold mb-1 group-hover:scale-105 transition-transform origin-left duration-300">
+              The Archivist</h3>
+            <p
+              class="text-gray-300 text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+              Short Film</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Philosophy Section -->
+  <section id="about" class="py-24 bg-neutral-900/30">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <span class="material-symbols-outlined text-4xl text-gray-500 mb-6">movie_filter</span>
+      <h2 class="text-3xl md:text-5xl font-display font-bold mb-8 leading-tight">
+        "I build worlds that are not just seen, but felt."
+      </h2>
+      <p class="text-lg md:text-xl text-gray-400 leading-relaxed mb-12">
+        My work explores the frontiers of spatial computing and video conferencing, transforming passive viewing into
+        active participation. Whether it's a VR headset or a Teams meeting, I believe in creating intuitive, impactful,
+        and visually stunning experiences that resonate with audiences on a deeper level.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="py-20 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="text-center md:text-left">
+        <h3 class="text-2xl font-display font-bold mb-2">Let's create something.</h3>
+        <a href="mailto:hello@rajesh.com"
+          class="text-gray-400 hover:text-white hover:scale-105 inline-block transition-transform">hello@rajesh.com</a>
+      </div>
+
+      <div class="flex gap-6">
+        <a href="#" class="text-gray-500 hover:text-white hover:scale-110 transition-transform">Twitter</a>
+        <a href="#" class="text-gray-500 hover:text-white hover:scale-110 transition-transform">LinkedIn</a>
+        <a href="#" class="text-gray-500 hover:text-white hover:scale-110 transition-transform">Instagram</a>
+      </div>
+
+      <div class="text-gray-600 text-sm">
+        © 2024 Rajesh Rangarajan.
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
