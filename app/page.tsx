@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FlipCard } from "./components/FlipCard";
 
 export default function Home() {
   return (
@@ -157,10 +158,10 @@ export default function Home() {
             </a>
 
             {/* Project 2 (Tall) - Media/Gaming Experiences */}
-            <div className="flip-card relative col-span-1 aspect-[4/5] md:aspect-auto md:row-span-2 cursor-pointer">
-              <div className="flip-inner">
-                {/* Front */}
-                <div className="card-front bg-neutral-900 border border-white/5">
+            <FlipCard
+              className="col-span-1 aspect-[4/5] md:aspect-auto md:row-span-2"
+              frontContent={
+                <div className="relative w-full h-full bg-neutral-900 border border-white/5">
                   <Image
                     src="/xbox-quest.webp"
                     alt="Media/Gaming Experiences"
@@ -171,19 +172,20 @@ export default function Home() {
                     <h3 className="text-2xl font-display font-bold">Media & Gaming</h3>
                   </div>
                 </div>
-                {/* Back */}
-                <div className="card-back">
+              }
+              backContent={
+                <div className="w-full h-full bg-gradient-to-br from-[#2d1b1e] to-[#221013] border border-primary/30 p-8 flex flex-col justify-center">
                   <h3 className="text-xl font-display font-bold mb-4 text-primary">Media & Gaming</h3>
                   <p className="text-gray-300 text-sm leading-relaxed">Details coming soon...</p>
                 </div>
-              </div>
-            </div>
+              }
+            />
 
             {/* Project 3 - Horizon TV */}
-            <div className="flip-card relative col-span-1 aspect-square cursor-pointer">
-              <div className="flip-inner">
-                {/* Front */}
-                <div className="card-front bg-neutral-900 border border-white/5">
+            <FlipCard
+              className="col-span-1 aspect-square"
+              frontContent={
+                <div className="relative w-full h-full bg-neutral-900 border border-white/5">
                   <Image
                     src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=1000&auto=format&fit=crop"
                     alt="Horizon TV"
@@ -194,19 +196,20 @@ export default function Home() {
                     <h3 className="text-xl font-display font-bold">Horizon TV</h3>
                   </div>
                 </div>
-                {/* Back */}
-                <div className="card-back">
+              }
+              backContent={
+                <div className="w-full h-full bg-gradient-to-br from-[#2d1b1e] to-[#221013] border border-primary/30 p-6 flex flex-col justify-center">
                   <h3 className="text-lg font-display font-bold mb-3 text-primary">Horizon TV</h3>
                   <p className="text-gray-300 text-sm leading-relaxed">Details coming soon...</p>
                 </div>
-              </div>
-            </div>
+              }
+            />
 
             {/* Project 4 - Together Mode Studio */}
-            <div className="flip-card relative col-span-1 aspect-square cursor-pointer">
-              <div className="flip-inner">
-                {/* Front */}
-                <div className="card-front bg-neutral-900 border border-white/5">
+            <FlipCard
+              className="col-span-1 aspect-square"
+              frontContent={
+                <div className="relative w-full h-full bg-neutral-900 border border-white/5">
                   <Image
                     src="/together-mode.jpg"
                     alt="Together Mode Studio"
@@ -217,13 +220,14 @@ export default function Home() {
                     <h3 className="text-xl font-display font-bold">Together Mode Studio</h3>
                   </div>
                 </div>
-                {/* Back */}
-                <div className="card-back">
+              }
+              backContent={
+                <div className="w-full h-full bg-gradient-to-br from-[#2d1b1e] to-[#221013] border border-primary/30 p-6 flex flex-col justify-center">
                   <h3 className="text-lg font-display font-bold mb-3 text-primary">Together Mode Studio</h3>
                   <p className="text-gray-300 text-sm leading-relaxed">Details coming soon...</p>
                 </div>
-              </div>
-            </div>
+              }
+            />
           </div>
         </div>
       </section>
