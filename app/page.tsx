@@ -96,7 +96,7 @@ export default function Home() {
           <div className="order-1 lg:order-2 relative animate-fade-in">
             <div className="relative aspect-[3/4] md:aspect-[4/5] lg:aspect-[3/4] w-full max-w-md mx-auto overflow-hidden rounded-sm transition-all duration-700 ease-out border border-white/5">
               <Image
-                src="/profile.jpeg"
+                src="/final-profile.png"
                 alt="Portrait of Rajesh Rangarajan"
                 fill
                 className="object-cover object-top transition-transform duration-700"
