@@ -204,7 +204,7 @@ export default function Home() {
               className="group project-card relative col-span-1 aspect-square overflow-hidden rounded-sm bg-neutral-900 border border-white/5 hover:border-white/20 transition-colors"
             >
               <Image
-                src="https://i.ytimg.com/vi/ZlJUTNd8LXc/maxresdefault.jpg"
+                src="/together-mode.jpg"
                 alt="Together Mode Studio"
                 fill
                 className="object-cover transition-transform duration-700 ease-out opacity-80 group-hover:opacity-60"
